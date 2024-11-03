@@ -8,7 +8,7 @@ const Hblog = () => {
     <>
       <section className="blog">
         <div className="container">
-          <Heading subtitle="REDES SOCIALES" title="Recent From Blog" />
+          <Heading subtitle="REDES SOCIALES" title="Publicaciones más Recientes" />
           <div className="grid2">
             {blog.slice(0, 3).map((val, index) => (
               <div className="items shadow" key={index}>
