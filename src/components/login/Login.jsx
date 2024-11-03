@@ -11,7 +11,7 @@ const Login = () => {
       <section className="contacts padding">
         <div className="container shadow flexSB">
           <div className="left row">
-            <iframe src={map}></iframe>
+            <iframe src={map} title="Descripción única2"></iframe>
           </div>
           <div className="right row">
             <h1>Ingresa</h1>
