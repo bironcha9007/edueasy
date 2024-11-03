@@ -41,7 +41,7 @@ header ul li a {
   transition: 0.5s;
 }
 header ul li a:hover {
-  color: #509df9;
+  color: var(--bl);
 }
 .start {
   

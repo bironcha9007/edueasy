@@ -392,23 +392,23 @@ export const blog = [
 export const testimonal = [
   {
     id: 1,
-    name: "ROGER SCOTT",
-    post: "MARKETING MANAGER",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    name: "INTEGRADO SOACHA",
+    post: "COLEGIO",
+    desc: "En el Colegio Integrado Soacha, impulsamos el aprendizaje a través de tecnología educativa de vanguardia. Nuestro enfoque integral en la educación básica y media facilita el acceso a herramientas digitales que enriquecen la experiencia de estudiantes y docentes, fortaleciendo el proceso de enseñanza y el desarrollo de habilidades clave para el futuro.",
     cover: "./images/testo/t1.webp",
   },
   {
     id: 2,
-    name: "ROGER SCOTT",
-    post: "MARKETING MANAGER",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    name: "CIDE",
+    post: "UNIVERSIDAD",
+    desc: "En la Universidad CIDE, integramos un entorno digital que fomenta el aprendizaje y la investigación. Nuestra plataforma permite una gestión académica avanzada, promoviendo la colaboración entre alumnos y docentes y optimizando recursos para brindar una educación moderna y efectiva, adecuada a las demandas del siglo XXI.",
     cover: "./images/testo/t2.webp",
   },
   {
     id: 3,
-    name: "ROGER SCOTT",
-    post: "MARKETING MANAGER",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    name: "TECNISISTEMAS",
+    post: "INSTITUTO",
+    desc: "En el Instituto Técnisistemas, potenciamos el aprendizaje práctico mediante un sistema digital que facilita la gestión de programas académicos. Nuestra plataforma mejora la experiencia educativa en áreas técnicas, fortaleciendo las habilidades de los estudiantes con recursos interactivos y un enfoque en la empleabilidad",
     cover: "./images/testo/t3.webp",
   },
 ]

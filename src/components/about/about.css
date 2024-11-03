@@ -94,12 +94,19 @@
 }
 .aboutHome .img {
   width: 100%;
+  
 }
 .aboutHome img {
 
   height: 80px;
   display: block;
   margin: auto;
+}
+.aboutHome .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 15px;
 }
 .aboutHome .item h2 {
   text-align: center;
