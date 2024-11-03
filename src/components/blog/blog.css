@@ -13,7 +13,7 @@
   transition: 0.5s;
 }
 .blog h1:hover {
-  color: #1eb2a6;
+  color: var(--bl);
   cursor: pointer;
 }
 .blog span {

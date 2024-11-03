@@ -1,55 +1,77 @@
-.contacts iframe {
+.auth {
+  padding: 50px 0;
+}
+
+.auth .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-container {
   width: 100%;
-  height: 100%;
-  border: none;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
-.contacts .right {
-  padding: 50px;
+
+.auth h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
-.contacts h1 {
-  font-size: 30px;
-  font-weight: 400;
-}
-.contacts p {
+
+.auth p {
   color: grey;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
-.contacts .items {
-  margin: 30px 0;
-}
-.contacts .box p {
-  font-size: 17px;
-  margin-top: 10px;
-}
-.contacts textarea,
-.contacts input {
+
+.auth form input,
+.auth form textarea,
+.auth button {
   width: 100%;
   padding: 15px;
   margin-bottom: 15px;
   outline: none;
-  border: 1px solid grey;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
-form .flexSB input:nth-child(1) {
-  margin-right: 10px;
+
+.auth button {
+  background-color: var(--bl);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
-.contacts h3 {
-  margin-top: 20px;
-  font-weight: 500;
-  margin-bottom: 10px;
+
+.auth button:hover {
+  background-color: #0044cc;
 }
-.contacts span {
+
+.toggle-link {
   color: var(--bl);
+  cursor: pointer;
   font-weight: 600;
-  font-size: 15px;
-  word-spacing: 5px;
+  text-decoration: underline;
 }
+
+.toggle-link:hover {
+  color: #0044cc;
+}
+
 @media screen and (max-width: 768px) {
-  .contacts .container {
-    flex-direction: column;
+  .auth .container {
+    padding: 10px;
   }
-  .contacts iframe {
-    height: 50vh;
-  }
-  .contacts .row {
-    width: 100%;
+
+  .form-container {
+    padding: 20px;
   }
 }

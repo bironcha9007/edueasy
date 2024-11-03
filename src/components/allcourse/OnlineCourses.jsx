@@ -8,7 +8,7 @@ const OnlineCourses = () => {
     <>
       <section className="online">
         <div className="container">
-          <Heading subtitle="COURSES" title="Browse Our Online Courses" />
+          <Heading subtitle="SERVICIOS" title="Conoce nuestros planes TODO INCLUIDO" />
           <div className="content grid3">
             {online.map((val, index) => (
               <div className="box" key={index}>
