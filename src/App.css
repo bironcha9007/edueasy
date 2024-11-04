@@ -211,9 +211,13 @@ p {
     grid-template-columns: repeat(1, 1fr);
   }
   .back {
+    display: flex;
+  align-items: center;
+  justify-content: center;
     background-position: center;
-    padding-top: 50%;
+    padding: 5%;
     height: 100vh;
+    flex-direction: column;
   }
 
   #heading h1 {
@@ -251,6 +255,15 @@ p {
     flex-direction: column;
     align-items: center;
 
+}
+
+.row {
+  width: 95%;
+}
+
+.back h1 {
+  font-size: 40px;
+  font-weight: 400;
 }
 }
 
