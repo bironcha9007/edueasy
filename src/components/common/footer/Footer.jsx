@@ -32,22 +32,22 @@ const Footer = () => {
       <footer>
         <div className="footer-container container">
           <div className="footer-section">
-            <h3>Enlaces</h3>
+            <h3>Conoce:</h3>
             <ul className="footer-links">
-              <li><a href="#module1">Módulo 1</a></li>
-              <li><a href="#module2">Módulo 2</a></li>
-              <li><a href="#module3">Módulo 3</a></li>
-              <li><a href="#module4">Módulo 4</a></li>
+              <li><a href="/allcourse">SERVICIOS</a></li>
+              <li><a href="/pricing">PLANES</a></li>
+              <li><a href="/login">INGRESO</a></li>
+              <li><a href="/about">NOSOTROS</a></li>
             </ul>
           </div>
 
           <div className="footer-section">
-            <h3>Contacto</h3>
+            <h3>Contacto:</h3>
             <p>
-              <i className="fa fa-map-marker"></i> Calle Ficticia 123, Ciudad, País
+              <i className="fa fa-map-marker"></i> Bogotá, Colombia
             </p>
             <p>
-              <i className="fa fa-phone"></i> +123 456 7890
+              <i className="fa fa-phone"></i> +57 3012491404
             </p>
             <p>
               <i className="fa fa-envelope"></i> contacto@edueasy.com
@@ -55,12 +55,21 @@ const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <h3>Síguenos</h3>
-            <div className="social-icons">
-              <a href="#facebook"><i className="fa fa-facebook"></i></a>
-              <a href="#twitter"><i className="fa fa-twitter"></i></a>
-              <a href="#instagram"><i className="fa fa-instagram"></i></a>
-            </div>
+            <h3>Síguenos en:</h3>
+            <div className="social">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook-f icon"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram icon"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-youtube icon"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-tiktok icon"></i>
+            </a>
+          </div>
           </div>
         </div>
 

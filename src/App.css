@@ -168,7 +168,31 @@ p {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
   background-color: #fff;
 }
+/* Estilos para el botón de "volver arriba" */
+.back-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: var(--bl);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
+/* Mostrar el botón cuando se ha desplazado más del 10% */
+.back-top-btn.show {
+  opacity: 1;
+}
+
+/* Efecto de hover */
+.back-top-btn:hover {
+  background-color: var(--bl2);
+}
 @media  (max-width: 1200px) {
   .margin {
       height: 15vh;

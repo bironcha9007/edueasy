@@ -1,7 +1,7 @@
 import React from "react";
 import Back from "../common/back/Back";
 import TeamCard from "./TeamCard";
-import Awrapper from "../about/Awrapper";
+
 import "./team.css";
 import "../about/about.css";
 
@@ -14,7 +14,7 @@ const Team = () => {
           <TeamCard />
         </div>
       </section>
-      <Awrapper />
+    
     </>
   );
 };
