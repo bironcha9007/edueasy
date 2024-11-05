@@ -1,6 +1,7 @@
 .testimonal .items {
-  padding: 30px;
+  padding: 20px;
   transition: 0.5s;
+  border-radius: 5%;
 }
 
 .testimonal .img {
@@ -51,5 +52,6 @@
   .testimonal .items {
     padding: 10px;
     transition: 0.5s;
+    border-radius: 2%;
 }
 }
