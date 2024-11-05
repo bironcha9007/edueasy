@@ -247,7 +247,7 @@ export const online = [
 
 export const team = [
   {
-    cover: "./images/team/t1.webp",
+    cover: "./images/team/int.webp",
     name: "Ph.D Adrian Molises",
     work: "DEVELOPER AND LEAD INSTRUCTOR",
   },

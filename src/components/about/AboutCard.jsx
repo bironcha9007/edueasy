@@ -14,8 +14,8 @@ const AboutCard = () => {
           </div>
           <div className="right row">
             <Heading
-              subtitle="Sobre EDU-EASY"
-              title="Que soluciona EDU-EASY :"
+              subtitle="Somos EDU-EASY"
+              title="La solución a un Click"
             />
             <div className="items">
               {homeAbout.map((val, index) => {

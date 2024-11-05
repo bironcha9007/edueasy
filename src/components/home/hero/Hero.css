@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../../../../public/images/bg.webp");
+  background-image: url("../../../../public/images/bg3.webp");
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -44,7 +44,7 @@
   .hero {
     text-align: center;
     background-position: right;
-    padding-top: 60%;
+    padding-top: 70%;
     height: 100vh;
     padding-right: 0px;
   }
@@ -65,6 +65,10 @@
   .hero #heading h3 {
     color: #fff;
     font-size: 35px;
+  }
+
+  .hero button{
+    margin: 10px;
   }
   .hero p{
     display: none;

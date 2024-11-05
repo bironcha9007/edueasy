@@ -14,6 +14,7 @@
   padding: 80px 50px;
 }
 .aboutHome .items {
+  
   margin-top: 50px;
 }
 .aboutHome .item {
@@ -23,11 +24,14 @@
   transition: 0.5s;
 }
 .aboutHome .img {
-  width: 200px;
+
+  width: 50%;
 }
 .aboutHome img {
   width: 70px;
   height: 70px;
+  margin: 10px;
+  
 }
 .aboutHome .item h2 {
   font-size: 20px;
@@ -67,6 +71,10 @@
   font-size: 20px;
   font-weight: 500;
 }
+
+.aboutHome .text{
+margin-left: 10px;
+}
 /*----------awrapper------------*/
 @media screen and (max-width: 768px) {
   .aboutHome .container {
@@ -78,7 +86,9 @@
   .awrapper {
     height: 50vh;
   }
-
+  .aboutHome .text{
+    margin-left: 0px;
+    }
   
 .aboutHome .right {
   padding: 40px 10px;
