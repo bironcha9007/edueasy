@@ -104,6 +104,7 @@ header ul li a:hover {
 @media screen and (max-width: 768px) {
   .start {
     clip-path: none;
+    background-color: var(--bl);
   }
 
   .head {
@@ -137,7 +138,7 @@ header ul li a:hover {
     top: 7vh;
     left: 0;
     width: 100%;
-    background-color: var(--bl2);
+    background-color: var(--bl);
   }
 
   .logo  {

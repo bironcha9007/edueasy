@@ -16,6 +16,8 @@
   --ye2: #ffe787;
   --re: #ff1c0c;
   --re2: #ff8787;
+  --ne: #000000;
+  --ba: #ffffff;
 
 }
 body {
@@ -39,7 +41,7 @@ body {
   line-height: 40px;
   border-radius: 50%;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.65);
   color: var(--bl);
   transition: 0.5s;
 }
@@ -106,7 +108,7 @@ p {
 }
 
 .back {
-  background-image: url("../public/images/back.webp");
+  background-image: url("../public/images/back2.webp");
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -128,6 +130,7 @@ p {
   font-weight: 500;
   font-size: 17px;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 .margin {
   margin-top: 45.3%;
