@@ -11,7 +11,7 @@ const HAbout = () => {
         <div className="container">
           <Heading
             subtitle="Nuestros Planes"
-            title="Conoce Nuestros Planes y Servivios"
+            title="Conoce Nuestros Planes y Servicios"
           />
 
           <div className="coursesCard">
