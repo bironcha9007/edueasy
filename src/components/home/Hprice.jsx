@@ -6,7 +6,7 @@ const Hprice = () => {
   return (
     <>
       <section className="hprice padding">
-        <Heading subtitle="OFERTAS" title="Precios y Paquetes" />
+        <Heading subtitle="OFERTASs" title="Precios y Paquetes" />
         <div className="price container grid">
           <PriceCard />
         </div>
