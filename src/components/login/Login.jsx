@@ -4,7 +4,7 @@ import Back from "../common/back/Back";
 import "./login.css";
 
 const Login = () => {
-  const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
+  const { loginWithRedirect, logout, isAuthenticated, user, isLoading } = useAuth0();
   const [isRegistering, setIsRegistering] = useState(false);
 
   const toggleForm = () => {
@@ -13,9 +13,14 @@ const Login = () => {
 
   const handleLogin = () => {
     loginWithRedirect({
-      screen_hint: isRegistering ? "signup" : "login",  // Autenticación o registro
+      screen_hint: isRegistering ? "signup" : "login",
     });
   };
+
+  // Muestra un mensaje de carga mientras Auth0 obtiene la información del usuario
+  if (isLoading) {
+    return <div>Cargando...</div>;
+  }
 
   return (
     <>
@@ -25,8 +30,9 @@ const Login = () => {
           <div className="form-container">
             {isAuthenticated ? (
               <div className="user-info">
-                <h2>Bienvenido, {user.name}</h2>
-                <p>{user.email}</p>
+                <img src={user?.picture} alt={user?.name} />
+                <h2>Bienvenido, {user?.name || "Usuario"}</h2>
+                <p>{user?.email || "Email no disponible"}</p>
                 <button onClick={() => logout({ returnTo: window.location.origin })}>
                   Cerrar Sesión
                 </button>

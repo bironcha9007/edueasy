@@ -75,7 +75,7 @@ function App() {
       authorizationParams={{
         redirect_uri: window.location.origin,
         audience: audience,
-        scope: "read:current_user update:current_user_metadata" // Define los alcances necesarios
+        scope: "openid profile email" // Define los alcances necesarios
       }}
     >
       <Router>

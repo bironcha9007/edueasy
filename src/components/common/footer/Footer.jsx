@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="right">
-            <input type="text" placeholder="Enter email address" />
+            <input type="text" placeholder="Enter email address" id="foot"/>
             <button className="subscribe-btn">
               <i className="fa fa-paper-plane"></i>
             </button>
