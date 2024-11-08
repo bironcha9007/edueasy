@@ -1,5 +1,7 @@
 .aboutHome {
+  
   height: auto;
+  padding: 50px 5px;
 }
 .aboutHome #heading {
   text-align: left;

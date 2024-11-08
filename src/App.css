@@ -246,7 +246,7 @@ p {
   justify-content: center;
     background-position: center;
     padding: 5%;
-    height: 100vh;
+    height: 95vh;
     flex-direction: column;
   }
 
@@ -274,7 +274,7 @@ p {
 }
 
 .padding {
-  padding: 10px 0;
+  padding: 50px 0;
 }
 
 .flex {
@@ -292,9 +292,23 @@ p {
 }
 
 .back h1 {
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.margin {
+  height: 8vh;
 }
 }
 
 
+@media screen and (max-width: 680px) {
+  .margin {
+      height: 8vh;
+  }
+
+  .back h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}

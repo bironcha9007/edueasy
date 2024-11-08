@@ -30,9 +30,10 @@ const Login = () => {
           <div className="form-container">
             {isAuthenticated ? (
               <div className="user-info">
+                <h3>BIENVENIDO A EDU-EASY</h3>
                 <img src={user?.picture} alt={user?.name} />
-                <h2>Bienvenido, {user?.name || "Usuario"}</h2>
-                <p>{user?.email || "Email no disponible"}</p>
+                <h2>Usuario:<p> {user?.name || "Usuario"}</p></h2>
+                <h2>Correo:</h2><p>{user?.email || "Email no disponible"}</p>
                 <button onClick={() => logout({ returnTo: window.location.origin })}>
                   Cerrar Sesión
                 </button>
