@@ -1,24 +1,34 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect, useRef } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const Head = () => {
   const { isAuthenticated, user, loginWithRedirect, logout } = useAuth0();
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
       <section className="head">
         <div className="container flexSB">
           <div className="logo">
-            <img
-              src={process.env.PUBLIC_URL + "/logo.png"}
-              alt="EDU-EASY Logo"
-            />
+            <img src={process.env.PUBLIC_URL + "/logo.png"} alt="EDU-EASY Logo" />
           </div>
 
           <div className="social">
@@ -31,9 +41,9 @@ const Head = () => {
             <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-youtube icon"></i>
             </a>
-            
+
             {/* Botón de Login / Logout con Dropdown */}
-            <div className="login-dropdown">
+            <div className="login-dropdown" ref={dropdownRef}>
               <button onClick={toggleDropdown} className="login-icon">
                 {isAuthenticated ? (
                   <>
