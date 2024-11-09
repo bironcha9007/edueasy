@@ -1,3 +1,11 @@
+.team  {
+  background-color: var(--ba);
+  margin-top: 50%;
+}
+
+.team .grid{
+  grid-template-columns: repeat(4, 1fr);
+}
 .team .items {
   transition: 0.5s;
 }
@@ -53,4 +61,13 @@
 .team .items:hover .overlay i:hover {
   background-color: var(--bl);
   color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .team  {
+    background-color: var(--ba);
+    margin-top: 10%;
+  }
+  .team .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

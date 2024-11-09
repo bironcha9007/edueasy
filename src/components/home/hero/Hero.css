@@ -36,10 +36,12 @@
     font-size: 18px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-
+.hero .margin {
+  height: 80vh;
+}
 @media screen and (max-width: 768px) {
-  .margin {
-    height: 50vh;
+  .hero .margin {
+    height: 80vh;
   }
   .hero {
     text-align: center;
@@ -47,6 +49,7 @@
     padding-top: 70%;
     height: 100vh;
     padding-right: 0px;
+    
   }
   .hero .row {
     width: 100%;
@@ -60,7 +63,7 @@
   }
   .hero #heading h1 {
     color: #fff;
-    font-size: 28px;
+    font-size: 20px;
   }
   .hero #heading h3 {
     color: #fff;
@@ -77,9 +80,10 @@
     font-size: 18px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+
 }
 @media screen and (max-width: 680px) {
-  .margin {
-      height: 8vh;
+  .hero .margin {
+      height: 65vh;
   }
 }

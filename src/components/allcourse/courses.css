@@ -114,11 +114,17 @@
 .online .box:hover h1 {
   color: #fff;
 }
+.coursesCard .margin {
+  height: 80vh;
+}
 /*-------------online---------*/
 @media screen and (max-width: 768px) {
+  .coursesCard .margin {
+    height: 80vh;
+  }
   .coursesCard {
     margin-top: 50%;
-    padding: 50px 0;
+    padding: 30px 0px 0px;
     background-color: #fff;
   }
   .coursesCard .items {

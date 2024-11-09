@@ -10,6 +10,7 @@ const Home = () => {
   return (
     <>
       <Hero />
+      
       <AboutCard />
  
       <Testimonal />

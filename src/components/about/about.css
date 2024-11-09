@@ -77,13 +77,18 @@
 .aboutHome .text{
 margin-left: 10px;
 }
+.aboutHome .margin {
+  height: 80vh;
+}
 /*----------awrapper------------*/
 @media screen and (max-width: 768px) {
-
+  .aboutHome .margin {
+    height: 80vh;
+  }
   .aboutHome {
-
-    padding: 50px 5px 5px;
-    margin-top: 65%;
+background-color: var(--ba);
+    padding: 30px 5px 5px;
+    margin-top: 50%;
   }
   .aboutHome .container {
     flex-direction: column-reverse;
