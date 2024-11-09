@@ -1,31 +1,34 @@
-
-
 /*--------head------------*/
 .head {
   padding: 20px 0px 0px;
   color: #fff;
   background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 10;
 }
 .logo h1 {
   font-size: 35px;
   font-weight: 900;
 }
-.logo  {
+.logo {
   width: 40%;
- }
+}
 .logo img {
- width: 35%;
+  width: 35%;
 }
 .head .icon {
   margin-left: 10px;
 }
-/*--------head------------*/
+.social {
+  display: flex;
+  align-items: center;
+}
 /*--------header------------*/
 header {
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 0px;
-  
+  margin: 0;
 }
+
 header .nav {
   display: flex !important;
 }
@@ -44,7 +47,6 @@ header ul li a:hover {
   color: var(--bl);
 }
 .start {
-  
   background-color: var(--bl2);
   padding: 30px 70px;
   color: #fff;
@@ -54,53 +56,81 @@ header ul li a:hover {
   display: none;
 }
 
-/* Estilo para el menú */
+/* Menu */
 .menu {
   list-style: none;
   display: flex;
 }
-
 .menu li {
   position: relative;
   margin: 0 15px;
 }
 
-/* Estilo para el botón del dropdown */
-.dropdown .dropbtn {
+/* Login Dropdown */
+.login-dropdown {
+  position: relative;
+  z-index: 20;
+  padding: 0%;
+  margin: 0 15px;
+  background: none;
+}
+.login-dropdown .login-icon {
+  margin: 0%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: none;
+  padding: 0%;
+}
+.login-dropdown .login-icon img.user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+  
 }
 
-/* Contenedor del contenido del dropdown */
-.dropdown-content {
+/* Dropdown Menu */
+.dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  z-index: 100;
+
+  flex-direction: column;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.dropdown-menu button {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  cursor: pointer;
+  color: #333;
 }
 
-/* Efecto hover para mostrar el contenido */
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown-menu button:hover {
+  background-color: #000000;
 }
 
-/* Estilo para los enlaces dentro del dropdown */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+/* Mostrar el dropdown */
+.login-dropdown:hover .dropdown-menu {
+  display: flex;
+  width: 100px;
 }
 
-.social{
+/* Social */
+.social {
   margin: 0%;
 }
-/*--------header------------*/
+
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
   .start {
     clip-path: none;
@@ -112,18 +142,21 @@ header ul li a:hover {
     color: #fff;
     background-color: rgba(255, 255, 255, 0.2);
   }
+
   header {
     margin: 0;
     background-color: var(--bl);
     position: relative;
-    
   }
+
   header ul.flexSB {
     display: none;
   }
+
   header ul li {
     margin-bottom: 20px;
   }
+
   .toggle {
     display: block;
     background: none;
@@ -133,6 +166,7 @@ header ul li a:hover {
     right: 0;
     top: -20px;
   }
+
   .mobile-nav {
     position: absolute;
     top: 7vh;
@@ -141,15 +175,26 @@ header ul li a:hover {
     background-color: var(--bl);
   }
 
-  .logo  {
+  .logo {
     width: 50%;
     margin: 2% 25%;
-   }
-  .logo img {
-   width: 100%;
   }
 
-  .social{
+  .logo img {
+    width: 100%;
+  }
+
+  .social {
     margin: 2% 5%;
+  }
+
+  /* Dropdown Responsivo */
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+    width: 100%;
+    top: 100%;
+    border-radius: 0;
+    border-top: none;
   }
 }
