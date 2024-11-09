@@ -16,7 +16,7 @@
   --ye2: #ffe787;
   --re: #ff1c0c;
   --re2: #ec6c6c;
-  --ne: #000000;
+  --ne: #181818;
   --ba: #ffffff;
 
 }
@@ -134,7 +134,7 @@ p {
   margin-bottom: 15px;
 }
 .margin {
-  margin-top: 45.3%;
+  margin-top: 0vh;
 }
 .grid {
   display: grid;
@@ -167,7 +167,7 @@ p {
   grid-gap: 10px;
 }
 .padding {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .shadow {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
@@ -201,12 +201,12 @@ p {
 }
 @media  (max-width: 1200px) {
   .margin {
-      height: 15vh;
+      height: 5vh;
   }
 }
 @media  (max-width: 1100px) {
   .margin {
-      height: 20vh;
+      height: 5vh;
   }
   .grid2 {
     display: grid;
@@ -216,7 +216,7 @@ p {
 }
 @media  (max-width: 1000px) {
   .margin {
-      height: 25vh;
+      height: 5vh;
   }
   .grid2 {
     display: grid;
@@ -274,7 +274,7 @@ p {
 }
 
 .padding {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .flex {

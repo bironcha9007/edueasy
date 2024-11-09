@@ -21,13 +21,16 @@
 }
 .testimonal .name {
   margin: 25px;
+  text-align: left;
 }
 .testimonal .name h2 {
+
   font-size: 20px;
   margin-bottom: 5px;
 }
 .testimonal .name span {
   color: var(--bl);
+  
 }
 .testimonal p {
   margin-top: 20px;
@@ -53,5 +56,13 @@
     padding: 10px;
     transition: 0.5s;
     border-radius: 2%;
+}
+.testimonal .name {
+  margin: 25px;
+  text-align: center;
+}
+.testimonal .name span {
+  color: var(--bl);
+
 }
 }

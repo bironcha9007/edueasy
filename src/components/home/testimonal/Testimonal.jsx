@@ -8,7 +8,7 @@ const Testimonal = () => {
     <>
       <section className="testimonal padding">
         <div className="container">
-          <Heading subtitle="CLIENTES" title="Conoce quienes hacen parte de nuestro equipo" />
+          <Heading subtitle="somos una familia" title="Conoce quienes hacen parte de nuestro equipo" />
 
           <div className="content grid2">
             {testimonal.map((val, index) => (

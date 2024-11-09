@@ -1,7 +1,7 @@
 .aboutHome {
-  
-  height: auto;
+
   padding: 50px 5px;
+  margin-top: 0%;
 }
 .aboutHome #heading {
   text-align: left;
@@ -79,6 +79,12 @@ margin-left: 10px;
 }
 /*----------awrapper------------*/
 @media screen and (max-width: 768px) {
+
+  .aboutHome {
+
+    padding: 50px 5px 5px;
+    margin-top: 65%;
+  }
   .aboutHome .container {
     flex-direction: column-reverse;
   }
@@ -93,7 +99,7 @@ margin-left: 10px;
     }
   
 .aboutHome .right {
-  padding: 40px 10px;
+  padding: 40px 0px;
 }
 .aboutHome .items {
   margin-top: 50px;

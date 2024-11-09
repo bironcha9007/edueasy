@@ -44,8 +44,7 @@ const Contact = () => {
               <button className="primary-btn">ENVIANOS TU MENSAJE</button>
             </form>
 
-            <h3>Siguenos en:</h3>
-            <span>FACEBOOK TWITTER INSTAGRAM</span>
+           
           </div>
         </div>
       </section>

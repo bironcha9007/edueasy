@@ -1,3 +1,7 @@
+.contacts{
+  margin-top: 5%;
+  background-color: rgb(255, 255, 255);
+}
 .contacts iframe {
   width: 100%;
   height: 100%;
@@ -8,7 +12,9 @@
 }
 .contacts h1 {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 600;
+  color: var(--bl);
+  margin-bottom: 5%;
 }
 .contacts p {
   color: grey;
@@ -45,6 +51,7 @@ form .flexSB input:nth-child(1) {
 @media screen and (max-width: 768px) {
   .contacts .container {
     flex-direction: column;
+    background-color: rgb(255, 255, 255);
   }
   .contacts iframe {
     height: 50vh;
@@ -52,4 +59,8 @@ form .flexSB input:nth-child(1) {
   .contacts .row {
     width: 100%;
   }
+
+  .contacts .right {
+    padding: 15px;
+}
 }
