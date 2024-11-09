@@ -200,7 +200,14 @@ p {
 .back-top-btn:hover {
   background-color: var(--bl2);
 }
-
+.form-container2 {
+  margin-top: 50%;
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+color: var(--bl);
+}
 @media  (max-width: 1200px) {
   .margin {
       height: 5vh;
@@ -301,12 +308,20 @@ p {
 .margin {
   height: 8vh;
 }
+.form-container2 {
+  margin-top: 70%;
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
 }
 
 
 @media screen and (max-width: 680px) {
   .margin {
-      height: 8vh;
+      height: 35vh;
   }
 
   .back h1 {

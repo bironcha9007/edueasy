@@ -10,7 +10,11 @@ const Home = () => {
   return (
     <>
       <Hero />
-      
+      <div className="form-container2">
+              <h1>SOMOS EDU-EASY</h1>
+             
+             
+            </div>
       <AboutCard />
  
       <Testimonal />

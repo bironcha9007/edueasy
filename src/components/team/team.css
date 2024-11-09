@@ -1,9 +1,11 @@
 .team  {
   background-color: var(--ba);
   margin-top: 50%;
+  padding: 1%;
 }
 
 .team .grid{
+  margin-top: 15%;
   grid-template-columns: repeat(4, 1fr);
 }
 .team .items {
@@ -33,7 +35,7 @@
   transition: 0.5s;
 }
 .team .details {
-  padding: 30px;
+  padding: 10px;
   text-align: center;
 }
 .team .details h2 {
@@ -69,5 +71,6 @@
   }
   .team .grid{
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }

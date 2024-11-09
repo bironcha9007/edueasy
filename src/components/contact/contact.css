@@ -1,5 +1,5 @@
 .contacts{
-  margin-top: 5%;
+  margin-top: 50%;
   background-color: rgb(255, 255, 255);
 }
 .contacts iframe {
@@ -48,7 +48,17 @@ form .flexSB input:nth-child(1) {
   font-size: 15px;
   word-spacing: 5px;
 }
+.contacts .margin {
+  height: 80vh;
+}
 @media screen and (max-width: 768px) {
+  .contacts{
+    margin-top: 10%;
+    background-color: rgb(255, 255, 255);
+  }
+  .contacts .margin {
+    height: 80vh;
+  }
   .contacts .container {
     flex-direction: column;
     background-color: rgb(255, 255, 255);
