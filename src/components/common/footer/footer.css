@@ -1,5 +1,5 @@
 .newsletter {
-  background-color: var(--ne);
+  background-color: var(--ne2);
   padding: 50px 0;
   color: #fff;
 margin-top: 3%;
@@ -44,7 +44,7 @@ margin-top: 3%;
 }
 
 footer {
-  background-color: #eeeeee;
+  background-color:var(--bl2);
   padding: 40px 0;
 }
 
@@ -85,8 +85,8 @@ footer {
 
 .legal {
   text-align: center;
-  padding: 20px 0;
-  background-color: #e9e9e9;
+  padding: 10px 0;
+
   color: grey;
   font-size: 0.9rem;
 }
@@ -95,7 +95,7 @@ footer {
 @media screen and (max-width: 768px) {
 
   footer {
-    background-color: #eeeeee;
+    background-color: var(--ne);
     padding: 40px 20px;
   }
   .newsletter .right {
@@ -131,4 +131,13 @@ text-align: center;
 .footer-section button{
 margin: 0px;
 }
+footer .social{
+  margin-bottom: 5%;
+  
+}
+footer .icon{
+  margin: 1%;
+  color: var(--ne2);
+}
+
 }
