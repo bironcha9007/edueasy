@@ -75,7 +75,7 @@ header ul li a:hover {
   background: none;
 }
 .login-dropdown .login-icon {
-  margin: 0%;
+  margin: 1%;
   cursor: pointer;
   display: flex;
   align-items: center;
