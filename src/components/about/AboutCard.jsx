@@ -14,7 +14,7 @@ const AboutCard = () => {
           </div>
           <div className="right row">
             <Heading
-              subtitle="Somos EDU-EASY"
+              subtitle="¿QUE ES EDU-EASY?"
               title="La solución a un Click"
             />
             <div className="items">

@@ -68,7 +68,7 @@ button {
   color: var(--bl);
   font-weight: 600;
   border: none;
-  margin: 30px 10px 0 0;
+  margin: 30px 1px 0 0;
   border-radius: 3px;
   cursor: pointer;
   box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
@@ -201,6 +201,7 @@ p {
   background-color: var(--bl2);
 }
 .form-container2 {
+  text-align: center;
   margin-top: 50%;
   width: 100%;
   padding: 40px;
@@ -233,6 +234,17 @@ color: var(--bl);
     grid-gap: 30px;
   }
 }
+
+@media screen and (max-width: 980px) {
+  .form-container2 {
+
+    margin-top: 70%;
+    width: 100%;
+    padding: 40px;
+
+  }
+}
+
 @media  (max-width: 900px) {
   .margin {
       height: 30vh;
@@ -309,12 +321,17 @@ p {
   height: 8vh;
 }
 .form-container2 {
-  margin-top: 70%;
+  margin-top: 75%;
   width: 100%;
   padding: 40px;
   background-color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 0px;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
 }
 }
 

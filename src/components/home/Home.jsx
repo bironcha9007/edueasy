@@ -11,15 +11,12 @@ const Home = () => {
     <>
       <Hero />
       <div className="form-container2">
-              <h1>SOMOS EDU-EASY</h1>
-             
-             
-            </div>
+        <h1>SOMOS EDU-EASY</h1>
+      </div>
       <AboutCard />
- 
+
       <Testimonal />
       <Hblog />
-
     </>
   );
 };

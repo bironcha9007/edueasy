@@ -32,7 +32,7 @@ const Head = () => {
           </div>
 
           <div className="social">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <div><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook-f icon"></i>
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
@@ -41,6 +41,7 @@ const Head = () => {
             <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-youtube icon"></i>
             </a>
+            </div>
 
             {/* Botón de Login / Logout con Dropdown */}
             <div className="login-dropdown" ref={dropdownRef}>
@@ -48,7 +49,7 @@ const Head = () => {
                 {isAuthenticated ? (
                   <>
                     <img src={user.picture} alt="User Profile" className="user-icon" />
-                    <span>{user.name}</span>
+                    <span className="spl">{user.name}</span>
                   </>
                 ) : (
                   <i className="fas fa-sign-in-alt icon"></i>
@@ -58,12 +59,13 @@ const Head = () => {
               {/* Submenú desplegable */}
               {isDropdownOpen && (
                 <div className="dropdown-menu">
-                  {isAuthenticated ? (
-                    <button onClick={() => logout({ returnTo: window.location.origin })}>
+                  
+                  {isAuthenticated ? ( 
+                    <button className="butonlo" onClick={() => logout({ returnTo: window.location.origin })}>
                       Cerrar Sesión
                     </button>
                   ) : (
-                    <button onClick={() => loginWithRedirect()}>
+                    <button className="butonlo" onClick={() => loginWithRedirect()}>
                       Iniciar Sesión
                     </button>
                   )}

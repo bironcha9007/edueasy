@@ -39,6 +39,19 @@
 .hero .margin {
   height: 80vh;
 }
+
+@media screen and (max-width: 980px) {
+  .hero{
+    padding-top: 30%;
+  }
+  .hero #heading h1 {
+    color: #fff;
+    font-size: 30px;
+}
+.hero #heading h3 {
+  font-size: 35px;
+}
+}
 @media screen and (max-width: 768px) {
   .hero .margin {
     height: 80vh;

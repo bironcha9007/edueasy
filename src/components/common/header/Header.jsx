@@ -40,9 +40,9 @@ const Header = () => {
               <Link to="/contact">Contacto</Link>
             </li>
           </ul>
-          <div className="start">
-            <Link to="/login" className="button">ACCEDE</Link>
-          </div>
+          <Link to="/login" className="button"><div className="start"> ACCEDE</div></Link>
+           
+          
           <button className="toggle" onClick={() => setClick(!click)}>
             {click ? (
               <i className="fa fa-times"></i>

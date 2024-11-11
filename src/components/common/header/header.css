@@ -47,10 +47,15 @@ header ul li a:hover {
   color: var(--bl);
 }
 .start {
-  background-color: var(--bl2);
+  background-color: var(--bl);
   padding: 30px 70px;
   color: #fff;
   clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+  font-weight: 600;
+}
+
+.start :hover {
+  background-color: var(--ne);
 }
 .toggle {
   display: none;
@@ -72,15 +77,21 @@ header ul li a:hover {
   z-index: 20;
   padding: 0%;
   margin: 0 15px;
-  background: none;
+  background-color: var(--bl);
+  border-radius: 10px 10px 0;
 }
 .login-dropdown .login-icon {
   margin: 1%;
   cursor: pointer;
   display: flex;
   align-items: center;
-  background: none;
+  background-color: rgba(255, 255, 255, 0);
   padding: 0%;
+}
+.butonlo{
+  margin: 5px;
+  text-align: center;
+  font-size: 10px;
 }
 .login-dropdown .login-icon img.user-icon {
   width: 30px;
@@ -89,7 +100,14 @@ header ul li a:hover {
   margin-right: 8px;
   
 }
-
+.login-icon .icon{
+  background-color: rgba(255, 255, 255, 0); 
+  color: var(--ba);
+}
+.login-icon .icon :hover{
+  color: var(--ba);
+  background-color: var(--bl2); 
+}
 /* Dropdown Menu */
 .dropdown-menu {
   display: none;
@@ -97,7 +115,7 @@ header ul li a:hover {
   top: 100%;
   right: 0;
   background-color: #fff;
-  border: 1px solid #ddd;
+margin-top: 0%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 5px;
   z-index: 100;
@@ -109,31 +127,37 @@ header ul li a:hover {
   background: none;
   border: none;
   width: 100%;
-  padding: 8px 10px;
+  padding: 5px 5px;
   text-align: left;
   cursor: pointer;
-  color: #333;
+  color: #ffffff;
 }
 
 .dropdown-menu button:hover {
-  background-color: #000000;
+  background-color: var(--bl);
 }
 
 /* Mostrar el dropdown */
 .login-dropdown:hover .dropdown-menu {
   display: flex;
   width: 100px;
+  background-color: var(--bl2);
+  
 }
 
 /* Social */
 .social {
   margin: 0%;
 }
-
+.social .spl{
+  color: #ffffff;
+  font-size: 12px;
+}
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .start {
     clip-path: none;
+    padding: 25px 70px;
     background-color: var(--bl);
   }
 
@@ -159,12 +183,13 @@ header ul li a:hover {
 
   .toggle {
     display: block;
-    background: none;
+    background-color:var(--bl2);
     color: #fff;
     font-size: 30px;
     position: absolute;
     right: 0;
     top: -20px;
+    margin: 20px 0px 0 0;
   }
 
   .mobile-nav {
@@ -186,10 +211,21 @@ header ul li a:hover {
 
   .social {
     margin: 2% 5%;
+    justify-content: space-between;
+  }
+  .login-dropdown {
+    position: relative;
+    z-index: 20;
+    padding: 1%;
+    margin: 0 0px;
+    background-color: var(--bl);
+    border-radius: 10px 10px 0;
   }
 
+  
   /* Dropdown Responsivo */
   .dropdown-menu {
+    
     right: 0;
     left: auto;
     width: 100%;
