@@ -238,7 +238,7 @@ color: var(--bl);
 @media screen and (max-width: 980px) {
   .form-container2 {
 
-    margin-top: 70%;
+    margin-top: 50%;
     width: 100%;
     padding: 40px;
 
@@ -275,6 +275,7 @@ color: var(--bl);
     font-size: 20px;
     margin: 20px 0;
     text-transform: capitalize;
+    text-align: center;
 }
 #heading h3 {
   font-size: 25px;
@@ -321,7 +322,7 @@ p {
   height: 8vh;
 }
 .form-container2 {
-  margin-top: 75%;
+  margin-top: 65%;
   width: 100%;
   padding: 40px;
   background-color: #fff;
@@ -330,7 +331,7 @@ p {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 90%;
   margin: auto;
 }
 }
@@ -344,5 +345,13 @@ p {
   .back h1 {
     font-size: 30px;
     font-weight: 600;
+  }
+  .form-container2 {
+    margin-top: 70%;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
   }
 }
